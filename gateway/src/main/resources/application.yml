@@ -1,0 +1,11 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: service-client
+          uri: lb://service-client
+          predicates:
+            - Path=/**

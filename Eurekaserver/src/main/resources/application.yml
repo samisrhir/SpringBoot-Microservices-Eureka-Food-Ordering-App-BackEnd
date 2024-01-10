@@ -1,0 +1,9 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: localhost
